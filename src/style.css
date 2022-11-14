@@ -1,0 +1,276 @@
+/* Typograpy */
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+section, footer {
+    padding: 15px 12px;
+    justify-content: center;
+}
+
+.byline {
+    font-size: small;
+}
+
+/* 12 Grid System */
+div {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sml-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media only screen and (min-width: 430px) {
+    .med-4 {
+        flex: 0 0 auto;
+        width: 33.333333333%;
+    }
+    
+    .med-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .lrg-4 {
+        flex: 0 0 auto;
+        width: 33%;
+    }
+
+    .lrg-8 {
+        flex: 0 0 auto;
+        width: 66.666666666%;
+    }
+}
+
+/* Assistance Codes*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom {
+    margin-top: auto;
+}
+
+.text-center{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation bar*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 10px;
+    white-space: nowrap;
+}
+
+nav a:nth-last-child(3) {
+    margin-left: auto;
+}
+
+nav a:hover {
+    background-color: rgb(72, 70, 70);
+}
+
+/* About section (profile and introduction) */
+img.profile-pic {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Interest Section */
+.fa-paintbrush {
+    width: 100px;
+}
+
+.skillicon {
+    width: 90px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.skillicon:hover {
+    animation-name: iconmove;
+}
+
+@keyframes iconmove {
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+}
+
+.skill {
+    height: 200px;
+    border: solid;
+    border-radius: 10%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.skill:hover {
+    background-color: lightgray;
+}
+
+/* Resume */
+
+.resumebutton {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.resumebutton:hover {
+    background-color: #d88178;
+}
+
+/* Blog Post Section */
+.blog {
+    max-height: 250px;
+    position:relative;
+    text-align: center;
+    color: white;
+}
+
+.blogpic {
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.blogpic:hover {
+    opacity: 0.5;
+}
+
+.blogtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 33px;
+    transform: translate(-50%, -50%);
+}
+
+.blogtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.blogtitlecard {
+    max-height: 400px;
+    width: 100%;
+    position:relative;
+    text-align: center;
+    color: white;
+}
+
+.blogtitlepic {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogcontent {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h3 span, h1 span {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.date {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    background-color: grey;
+}
+
+/* Comment Section */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fa-comment, .fa-share {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+}
