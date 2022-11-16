@@ -3,7 +3,7 @@
 ## Links
 - [Portfolio Website](https://earnest-cajeta-a61125.netlify.app/blog4.html)
 - [GitHub Repository](https://github.com/johnsonw1017/Portfolio)
-- [Website Presentation Video](https://youtube.com)
+- [Website Presentation Video](https://youtu.be/PjXmvx4T7vE)
 
 ## Purpose
 The target audience of this website is potential employers and colleagues. It is an opportunity introduce my background, experience, personality and interests and to showcase my web development skills.
